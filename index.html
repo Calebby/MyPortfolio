@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Contact</a>
+				<a href="#" id="login">Login</a>
+				<a href="#" id="signup">Sign Up</a>
+			</ul>
+		</nav>	
+	</header>
+
+	<section>
+	<div>
+		<h1>こんにちは (konnichiwa) - “Hello I'm Caleb”</h1>
+		<p>
+			This website is all about me, if you want to learn more about me then 
+			<br> you are free to check out my website!.
+		</p>
+		<br>
+		<h2>Caleb's Skillset</h2> 
+		<ul class="skill">
+			<br>Singing<br>
+			<br>Dancing<br>
+			<br>Plays Instruments<br>
+			<br>Essay writing<br>
+		  </ul>
+		  <br>
+		  <br>
+		  <h2>Caleb's Experience</h2> <br>
+		<ul class="experience">
+			My mother was shocked when I first played a guitar
+			my age was seven (7), I was a very talented kid I was a scholar in elementary
+			I was champion at debates when I got to highschool but I lost my spark and fire way back 
+			when I was in highschool they were not proud of my achievements and they always say that
+			I should study more. But when I got to college my fire started to spark again, I've met people who
+			changed me and heal my wounds.
+		  </ul>
+	</div>
+		
+
+
+	</section>
+
+	<!-- Login popup -->
+	<div id="loginPopup" class="popup">
+		<h2>Login</h2>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br>
+
+			<input type="submit" value="Login">
+		</form>
+		<a href="#" class="closePopup">Close</a>
+	</div>
+
+	<!-- Signup popup -->
+	<div id="signupPopup" class="popup">
+		<h2>Sign Up</h2>
+		<form>
+			<label for="fullname">Full Name:</label>
+			<input type="text" id="fullname" name="fullname"><br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+
+			<label for="newUsername">Username:</label>
+			<input type="text" id="newUsername" name="newUsername"><br>
+
+			<label for="newPassword">Password:</label>
+			<input type="password" id="newPassword" name="newPassword"><br>
+
+			<input type="submit" value="Sign Up">
+		</form>
+		<a href="#" class="closePopup">Close</a>
+	</div>
+
+	<div class="image-container">
+		<a href="#"><img src="css/backg2.png" class="logo"></a>
+	  </div>
+
+
+	<script>
+		// Login popup
+		const loginPopup = document.querySelector('#loginPopup');
+		const loginLink = document.querySelector('#login');
+		const loginClose = document.querySelector('#loginPopup .closePopup');
+
+		loginLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			loginPopup.classList.add('open');
+		});
+
+		loginClose.addEventListener('click', function(e) {
+			e.preventDefault();
+			loginPopup.classList.remove('open');
+		});
+
+		// Signup popup
+		const signupPopup = document.querySelector('#signupPopup');
+		const signupLink = document.querySelector('#signup');
+		const signupClose = document.querySelector('#signupPopup .closePopup');
+
+		signupLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			signupPopup.classList.add('open');
+		});
+
+		signupClose.addEventListener('click', function(e) {
+			e.preventDefault();
+			signupPopup.classList.remove('open');
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*font-family: sans-serif;
+	*/
+	font-family: 'Lucida Sans';
+	line-height: 1.5;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 160vh;
+	background-image: url(backg.jpg);
+	margin-left: 50px;
+	margin-right: 50px;
+	color:  #e9e1e1;
+	font-size: 17px;
+
+
+}
+
+.detail
+{
+	font-family: 'Lucida Sans';
+    margin-left: 0%;
+    margin-top: 0%;
+    color:  #e9e1e1;
+
+}
+
+ul.skill
+{
+	font-family: 'Lucida Sans';
+    list-style-type: square;
+    color: #c8c8c8;
+    font-size: 17px;
+	
+}
+ul.experience
+{
+	font-family: 'Lucida Sans';
+    list-style-type: square;
+    color: #e9e1e1;
+    font-size: 17px;
+}
+
+/*for picture ko sana sirrrrr :((
+/*img.logo{ 
+
+    height: 150vh;
+    width: 100vh;
+    position: absolute; top: 0pt; left: 25pt;
+
+} */
+
+header {
+	background-color: #fff;
+	background-image: url(backg.jpg);
+	background: transparent;
+	filter: opacity(5px);
+	padding: 10px;
+	box-shadow: 0 2px 4px rgba(40, 40, 40, 0.1);
+}
+
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	margin-right: 10px;
+}
+
+nav a {
+	display: block;
+	padding: 10px;
+	color: #e9e1e1;
+	text-decoration: none;
+	font-size: 17.5px;
+	font-style: oblique;
+}
+
+nav a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+section {
+	padding: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 47, 47, 0.534);
+	z-index: 9999;
+}
+
+.popup h2 {
+	font-size: 4rem;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.popup form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	color: #e9e1e1;
+}
+
+.popup form label {
+	margin-bottom: 5px;
+}
+
+.popup form input {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.popup form input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+.popup form input[type="submit"]:hover {
+	background-color: #333;
+}
+
+.popup a {
+	display: block;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.popup a:hover {
+	background-color: #333;
+}
+.popup.open {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.popup.open form,
+.popup.open a {
+	width: 50%;
+}
+
+.image-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+  }
+  
+img {
+	max-width: 100%;
+} 
+
+
+  
+  
+  
